@@ -31,7 +31,7 @@ async def approve_join_request(update: Update, context: ContextTypes.DEFAULT_TYP
 
 def main():
     # Создаем приложение и передаем ему токен бота
-    application = Application.builder().token(7704208492:AAFmCwy5rwTT3DOIkXMHD7AVk_PxgOjmpds).build()
+    application = Application.builder().token(BOT_TOKEN).build()
 
     # Добавляем обработчик заявок на вступление
     application.add_handler(ChatJoinRequestHandler(approve_join_request))
