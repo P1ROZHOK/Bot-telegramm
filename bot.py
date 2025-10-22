@@ -2,9 +2,8 @@ import os
 from telegram import Update
 from telegram.ext import Application, ChatJoinRequestHandler, ContextTypes
 
-# Токен вашего бота. Никому его не показывайте!
-# Получите у @BotFather в Telegram
-BOT_TOKEN = os.environ.get("BOT_TOKEN")  # Рекомендуется использовать переменные окружения
+
+BOT_TOKEN = os.environ.get("7704208492:AAFmCwy5rwTT3DOIkXMHD7AVk_PxgOjmpds")  
 
 async def approve_join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """
@@ -32,7 +31,7 @@ async def approve_join_request(update: Update, context: ContextTypes.DEFAULT_TYP
 
 def main():
     # Создаем приложение и передаем ему токен бота
-    application = Application.builder().token(BOT_TOKEN).build()
+    application = Application.builder().token(7704208492:AAFmCwy5rwTT3DOIkXMHD7AVk_PxgOjmpds).build()
 
     # Добавляем обработчик заявок на вступление
     application.add_handler(ChatJoinRequestHandler(approve_join_request))
